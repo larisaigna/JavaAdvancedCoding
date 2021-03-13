@@ -1,0 +1,19 @@
+
+0
+java:S1220""Move this file to a named package.
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+W
+java:S1854("<Remove this useless assignment to local variable "javaRo19".(Ý³”µýÿÿÿÿ
+R
+java:S1854'"<Remove this useless assignment to local variable "javaRo18".(ö¯¤
+W
+java:S1854&"<Remove this useless assignment to local variable "javaRo17".(§á¸¼øÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÖÐ ÷
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(¯†ÎÍøÿÿÿÿ
+H
+java:S1481&"-Remove this unused "javaRo17" local variable.(§á¸¼øÿÿÿÿ
+C
+java:S1481'"-Remove this unused "javaRo18" local variable.(ö¯¤
+H
+java:S1481("-Remove this unused "javaRo19" local variable.(Ý³”µýÿÿÿÿ
