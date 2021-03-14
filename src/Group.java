@@ -28,11 +28,15 @@ public class Group {
         }
     }
 
+    public Set<Student> getStudentList() {
+        return studentList;
+    }
+
     @Override
     public String toString() {
-        return "Group{" +
-                "trainer=" + trainer +
-                ", studentList=" + studentList +
+        return "Group\n{"  +
+                "trainer=" + trainer + "\n"+
+                "studentList=" + studentList +
                 '}';
     }
 }

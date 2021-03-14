@@ -13,6 +13,7 @@ public abstract class Person {
     }
 
     public String getFirstName() {
+
         return firstName;
     }
 
@@ -21,12 +22,16 @@ public abstract class Person {
     }
 
     public LocalDate getDateOfBirth() {
+
         return dateOfBirth;
     }
 
     public void setDateOfBirth(LocalDate dateOfBirth) {
+
         this.dateOfBirth = dateOfBirth;
     }
+
+
 
     @Override
     public String toString() {

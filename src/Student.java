@@ -9,6 +9,20 @@ public class Student extends Person {
         this.hasPreviousJavaKnowledge = hasPreviousJavaKnowledge;
     }
 
+
+    public String getLastName() {
+        return super.getLastName();
+    }
+
+    public LocalDate getDateOfBirth() {
+
+        return super.getDateOfBirth();
+    }
+
+    public int getAge() {
+        return LocalDate.now().getYear() - super.getDateOfBirth().getYear();
+    }
+
     @Override
     public String toString() {
         return super.toString() +
