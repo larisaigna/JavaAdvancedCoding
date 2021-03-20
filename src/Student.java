@@ -20,6 +20,7 @@ public class Student extends Person {
     }
 
     public int getAge() {
+
         return LocalDate.now().getYear() - super.getDateOfBirth().getYear();
     }
 

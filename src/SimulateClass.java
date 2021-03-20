@@ -18,8 +18,18 @@ public class SimulateClass {
         printGroups();
         printStudentsAlphabetically();
         showGroupWithMaxNumberOfStudentsClassicMethod();
-        showAllGroupsWithMaxNumberOfStudentsClassicMethod();
+        System.out.println("Groups with max. number of students are: \n" + getAllGroupsWithMaxNumberOfStudentsClassicMethod());
+       /* System.out.println("Groups with max. number of students are (var 2): \n");
+        for (Group group : getAllGroupsWithMaxNumberOfStudentsClassicMethod()) {
+            System.out.println("   " + group.getNameOfGroup);  - add nameOfGroup field in Group Class
+
+        }
+
+        */
         showAllStudentsYoungerThan25(25);
+
+        System.out.println("Triple: " + tripleNumberOfStudentsFromFromMaxGroup(getAllGroupsWithMaxNumberOfStudentsClassicMethod()));
+
 
     }
 
@@ -63,7 +73,7 @@ public class SimulateClass {
         System.out.println(aux);
     }
 
-    private static void showAllGroupsWithMaxNumberOfStudentsClassicMethod() {
+    private static List<Group> getAllGroupsWithMaxNumberOfStudentsClassicMethod() {
 
         List<Group> groupList = new ArrayList<>();
         Group maxSizeGroup = new Group(null, new LinkedHashSet<>());
@@ -78,7 +88,15 @@ public class SimulateClass {
                 groupList.add(group);
             }
         }
-        System.out.println("Groups with max. number of students are: \n" + groupList);
+        return groupList;
+    }
+
+    private static int multiplyNumberOfStudentsFromFromMaxGroup(int numberOfTimes, List<Group> maxGroup) { // ... varArgs
+        return maxGroup.size() * maxGroup.get(0).getStudentList().size() * numberOfTimes;
+    }
+
+    private static int tripleNumberOfStudentsFromFromMaxGroup(List<Group> maxGroup) {
+        return multiplyNumberOfStudentsFromFromMaxGroup(3, maxGroup);
     }
 
     private static void showGroupWithMaxNumberOfStudentsFunctionalMethod() {
